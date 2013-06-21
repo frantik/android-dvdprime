@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Do not translate. Background color for albums in the artists list view. -->
+    <color name="expanding_child_background">#ff404040</color>
+
+
+    <color name="textColorIconOverlay">#fff</color>
+    <color name="textColorIconOverlayShadow">#000</color>
+    <color name="sect_secondary">#4fff</color>
+    <color name="quickcontact_disambig">#f2f2f2</color>
+    <color name="quickcontact_disambig_divider">#afafaf</color>
+
+    <color name="edit_divider">#ff666666</color>
+    
+	<color name="contact_name_color">#FFFFFF</color>
+	<color name="text_color">#FFAE00</color>
+	<color name="text_date_color">#BEBEBE</color>
+    <color name="shadow_color">#000000</color>
+    <color name="color_text_disable">#5A5A5A</color>
+    
+	<color name="content_base_font_color">#333333</color>
+	<color name="yellow_base_font_color">#FFA200</color>
+	<color name="blue_base_font_color">#08787e</color>
+	<color name="emerald_base_font_color">#388187</color>
+	<color name="orange_base_font_color">#d8702a</color>
+	<color name="gray_base_font_color">#999999</color>
+	<color name="dark_gray_base_font_color">#666666</color>
+	<color name="light_gray_base_font_color">#CCCCCC</color>
+	<color name="white_base_font_color">#DDDDDD</color>
+	<color name="edit_btn_base_font_color">#646f7c</color>
+	<color name="child_content_base_font_color">#777777</color>
+
+	<color name="white">#ffffff</color>
+    <color name="blue">#770000ff</color>
+    <color name="red">#FF0000</color>
+    <color name="orange">#FFAE00</color>
+    <color name="emerald">#388187</color>
+	<color name="gray">#BEBEBE</color>
+	<color name="sub_text_gray">#8C8C8C</color>
+	<color name="darkgray">#5A5A5A</color>
+	<color name="black">#000000</color>
+	<color name="black50">#7F000000</color>
+
+    <!-- EZ -->
+	<color name="dp_color001">#FFFFFF</color>
+	<color name="dp_color002">#000000</color>
+	<color name="dp_color002_bg">#80000000</color>
+	<color name="dp_color003">#81BEE1</color>
+	<color name="dp_color004">#ED5F00</color>
+	<color name="dp_color005">#666666</color>
+	<color name="dp_color006">#3B3B3B</color>
+	<color name="dp_color007">#91DCFF</color>
+	<color name="dp_color008">#60C0FF</color>
+	<color name="dp_color009">#91DCFF</color>
+	<color name="dp_color010">#B1E0FF</color>
+	<color name="dp_color011">#BEBEBE</color>
+	<color name="dp_color012">#636363</color>
+	<color name="dp_color013">#FFFFFF</color>
+	<color name="dp_color014">#BEBEBE</color>
+	<color name="dp_color015">#00A2FF</color>
+	<color name="dp_color016">#636363</color>
+	<color name="dp_color017">#000000</color>
+	<color name="dp_color018">#656F4F</color>
+	<color name="dp_color019">#666666</color>
+	<color name="dp_color020">#F6AF7F</color>
+	<color name="dp_color021">#91DCFF</color>
+	<color name="dp_color022">#60C0FF</color>
+	<color name="dp_color023">#91DCFF</color>
+	<color name="dp_color024">#B1E0FF</color>
+	<color name="dp_color025">#767676</color>
+	<color name="dp_color026">#767676</color>
+	<color name="dp_color027">#90E2F7</color>
+	<color name="dp_color028">#00D8FF</color>
+	<color name="dp_color029">#5F6466</color>
+	<color name="dp_color030">#FE0000</color>
+	<color name="dp_color031">#FFFFFF</color>
+	<color name="dp_color032">#FFCC00</color>
+	<color name="dp_color033">#FFFFFF</color>
+	<color name="dp_color034">#3E91FF</color>
+	<color name="dp_color035">#000000</color>
+	<color name="dp_color036">#FF0000</color>
+	<color name="dp_color037">#0086FF</color>
+	<color name="dp_color038">#B2B2B2</color>
+	<color name="dp_color039">#747474</color>
+	<color name="dp_color040">#EB2C00</color>
+	<color name="dp_color041">#46A7FE</color>
+	<color name="dp_color042">#FFFFFF</color>
+	<color name="dp_color043">#A8A8A8</color>
+	<color name="dp_color044">#808080</color>
+	<color name="dp_color045">#3B5998</color>
+	<color name="dp_color046">#333333</color>
+	<color name="dp_color047">#A2A2A2</color>
+	<color name="dp_color048">#8BC500</color>
+	<color name="dp_color049">#E60000</color>
+	<color name="dp_color050">#FFFFFF</color>
+	<color name="dp_color051">#10A5FF</color>
+	<color name="dp_color052">#F00101</color>
+	<color name="dp_color053">#0036FF</color>
+	<color name="dp_color054">#000000</color>
+
+	<!-- Free Talk -->
+    <drawable name="text_color_black">#ff000000</drawable>
+	<color name="msg_quickedit_text_color">#ff888888</color>
+	
+	<!-- Widget -->
+    <color name="appwidget_text">#ffffffff</color>
+</resources>

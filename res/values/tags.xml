@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<item name="tagImageURL" type="id"/> 
+	<item name="tagPromoURL" type="id"/> 
+	<item name="tagBackground" type="id"/> 
+	<item name="tagScaleType" type="id"/> 
+	<item name="tagWebImage" type="id"/> 
+</resources>

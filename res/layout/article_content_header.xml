@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	
+	<!-- 상단의 아래 방향 화살표 표시 레이아웃 -->
+	<RelativeLayout
+		android:id="@+id/article_content_arrow_down_layout"
+		android:layout_width="match_parent"
+		android:layout_height="36.66dp">
+		<ImageView
+			android:id="@+id/article_content_arrow_down_imageView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:src="@android:drawable/arrow_down_float" />
+	</RelativeLayout>
+	
+	<!-- 상단의 버튼 레이아웃 -->
+	<RelativeLayout
+		android:id="@+id/article_content_top_button_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/article_content_arrow_down_layout">
+		<HorizontalScrollView 
+			android:id="@+id/article_content_h_scrollView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:scrollbars="none">
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<Button
+					android:id="@+id/article_content_top_button_boxweb_btn"
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:text="@string/button_view_by_boxweb"
+					android:textSize="11sp"
+					android:textColor="@drawable/btn_font_color"
+					android:background="@drawable/btn_selector"/>
+				<Button
+					android:id="@+id/article_content_top_button_original_btn"
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:text="@string/button_view_by_original"
+					android:textSize="11sp"
+					android:textColor="@drawable/btn_font_color"
+					android:background="@drawable/btn_selector"/>
+				<Button
+					android:id="@+id/article_content_top_button_modify_btn"
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:text="@string/button_modify"
+					android:textSize="11sp"
+					android:textColor="@drawable/btn_font_color"
+					android:background="@drawable/btn_selector"
+					android:visibility="gone"/>
+				<Button
+					android:id="@+id/article_content_top_button_delete_btn"
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:text="@string/button_delete"
+					android:textSize="11sp"
+					android:textColor="@drawable/btn_font_color"
+					android:background="@drawable/btn_selector"
+					android:visibility="gone"/>
+				<Button
+					android:id="@+id/article_content_top_button_memo_btn"
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:text="@string/button_memo"
+					android:textSize="11sp"
+					android:textColor="@drawable/btn_font_color"
+					android:background="@drawable/btn_selector"/>
+				<Button
+					android:id="@+id/article_content_top_button_recommend_btn"
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:text="@string/button_recommend"
+					android:textSize="11sp"
+					android:textColor="@drawable/btn_font_color"
+					android:background="@drawable/btn_selector"/>
+				<Button
+					android:id="@+id/article_content_top_button_copy_btn"
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:text="@string/button_copy"
+					android:textSize="11sp"
+					android:textColor="@drawable/btn_font_color"
+					android:background="@drawable/btn_selector"/>
+				<Button
+					android:id="@+id/article_content_top_button_my_dp_btn"
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:text="@string/button_my_dp"
+					android:textSize="11sp"
+					android:textColor="@drawable/btn_font_color"
+					android:background="@drawable/btn_selector"/>
+				<Button
+					android:id="@+id/article_content_top_button_share_fb_btn"
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:text="@string/button_share_fb"
+					android:textSize="11sp"
+					android:textColor="@drawable/btn_font_color"
+					android:background="@drawable/btn_selector"/>
+				<Button
+					android:id="@+id/article_content_top_button_share_twitter_btn"
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:text="@string/button_share_twitter"
+					android:textSize="11sp"
+					android:textColor="@drawable/btn_font_color"
+					android:background="@drawable/btn_selector"/>
+			</LinearLayout>
+		</HorizontalScrollView>
+	</RelativeLayout>
+	
+	<!-- 제목 및 내용 정보 표시 레이아웃 -->	
+	<RelativeLayout
+		android:id="@+id/article_content_profile_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/article_content_top_button_layout"
+		android:padding="6.66dp"
+		android:background="@color/dp_color046">
+		<!-- 게시자 아바타 레이아웃 -->
+		<FrameLayout
+			android:id="@+id/article_content_avatar_frameLayout" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<ImageView android:id="@+id/article_content_avatar_imageView"
+				android:layout_width="53.33dip" 
+				android:layout_height="53.33dip"
+				android:scaleType="fitXY"
+				android:background="@drawable/ic_avatar_picture" />
+		</FrameLayout>
+
+		<RelativeLayout
+			android:id="@+id/article_content_subprofile_layout"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_toRightOf="@+id/article_content_avatar_frameLayout"
+			android:layout_marginLeft="6.66dp">
+			<TextView android:id="@+id/article_content_subject_textView"
+				android:layout_width="match_parent" 
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:lines="2" 
+				android:maxLines="2"
+				android:textAppearance="@style/WhiteBaseSecondaryText" />
+			<TextView android:id="@+id/article_content_nickname_textView"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:layout_below="@+id/article_content_subject_textView"
+				android:layout_alignParentBottom="true"
+				android:singleLine="true" 
+				android:textAppearance="@style/LightGrayBaseSmallText" />
+			<TextView android:id="@+id/article_content_write_date_textView"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:layout_below="@+id/article_content_subject_textView"
+				android:layout_alignParentRight="true"
+				android:layout_alignParentBottom="true"
+				android:singleLine="true" 
+				android:textAppearance="@style/LightGrayBaseSmallText" />
+		</RelativeLayout>
+	</RelativeLayout>
+	<!-- 본문 -->
+	<RelativeLayout
+		android:id="@+id/article_content_content_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/article_content_profile_layout">
+		<WebView android:id="@+id/article_content_webView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:scrollbars="none" />
+		<TextView 
+			android:id="@+id/article_message_textView" 
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:textSize="16dip"
+			android:autoLink="all"
+			android:textColor="@color/white_base_font_color"
+			android:textColorHighlight="#000AD8" 
+			android:textColorLink="@color/dp_color028"
+			android:visibility="gone" />
+	</RelativeLayout>
+	<!-- 태그 -->
+	<TextView android:id="@+id/article_content_tag_textView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/article_content_content_layout"
+		android:singleLine="true"
+		android:paddingTop="13.33dp"
+		android:paddingLeft="6.66dp"
+		android:paddingBottom="13.33dp"
+		android:textAppearance="@style/GrayBaseSecondaryText"
+		android:visibility="gone" />
+</RelativeLayout>

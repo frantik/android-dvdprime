@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<TextView 
+		android:id="@+id/text_username"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" 
+		android:textSize="17dip" 
+		android:textColor="#FFFFFF" 
+		android:paddingLeft="10dp" />
+	<EditText 
+		android:id="@+id/new_account_username"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" 
+		android:inputType="textEmailAddress" 
+		android:imeOptions="actionNext"
+		android:maxLength="128" />
+		
+	<View 
+		android:layout_width="match_parent" 
+		android:layout_height="0.3dip" 
+		android:background="#FF909090"/>
+
+	<TextView 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" 
+		android:text="@string/password"
+		android:textSize="17dip" 
+		android:textColor="#FFFFFF" 
+		android:paddingLeft="10dp" />
+	<EditText 
+		android:id="@+id/new_account_password"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" 
+		android:inputType="textPassword" 
+		android:imeOptions="actionDone"
+		android:hint="@string/password" />
+		
+	<View 
+		android:layout_width="match_parent" 
+		android:layout_height="0.3dip" 
+		android:background="#FF909090"/>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="65dip">
+	
+		<CheckBox 
+			android:id="@+id/new_show_password" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true" 
+			android:layout_centerVertical="true"
+			android:text="@string/show_password" 
+			android:textSize="22dip" />
+	</LinearLayout>
+
+    <ListView 
+    	android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:drawable/bottom_bar">
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button android:id="@+id/new_account_login"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginTop="5dip"
+            android:text="@string/login" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

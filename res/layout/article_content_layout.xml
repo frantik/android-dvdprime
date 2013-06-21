@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	
+	<!-- 댓글 목록 -->
+	<ListView 
+		android:id="@+id/article_comment_listView"
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content" />
+
+	<LinearLayout 
+		android:id="@+id/article_comment_edit_layout" 
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content" 
+		android:layout_alignParentBottom="true"
+		android:gravity="center_vertical"
+		android:paddingTop="6.66dip" 
+		android:paddingBottom="3.33dip" 
+		android:background="@drawable/msg_search_bg"
+		android:visibility="gone">
+		
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"
+			android:addStatesFromChildren="true">
+				
+			<!-- Edit Begin -->
+			<EditText
+				android:id="@+id/article_comment_editText" 
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" 
+				android:layout_marginLeft="3.33dip"
+				android:ellipsize="end" 
+				android:scrollbars="vertical" 
+				android:hint="@string/enter_comment_here" 
+				android:text="@string/empty" 
+				android:textSize="14sp" 
+				android:textColor="@drawable/text_color_black" 
+				android:textColorHint="@color/msg_quickedit_text_color" 
+				android:imeOptions="actionSend|flagNoEnterAction" 
+				android:inputType="textEmailAddress|textWebEditText|textMultiLine"
+				android:background="@drawable/msg_search_input" />
+		</RelativeLayout>			
+
+		<Button 
+			android:id="@+id/article_comment_send_btn" 
+			android:layout_width="wrap_content" 
+			android:layout_height="31.33dip" 
+			android:layout_marginTop="0dip" 
+			android:layout_marginRight="6.67dip" 
+			android:layout_marginLeft="6.67dip"
+			android:minWidth="64dip"
+			android:shadowDx="-1" 
+		 	android:shadowDy="-1" 
+			android:shadowRadius="0.3" 
+			android:shadowColor="#80000000"
+			android:text="@string/button_submit" 
+			android:textStyle="bold"
+			android:typeface="sans" 
+			android:textSize="14sp"
+			android:textColor="@drawable/btn_text_send_selector" 
+			android:background="@drawable/btn_send_selector" />
+	</LinearLayout>
+
+</RelativeLayout>

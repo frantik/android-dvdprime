@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">DVD PRIME</string>
+    <string name="list_community">커뮤니티</string>
+    <string name="list_hardware">하드웨어 포럼</string>
+    <string name="list_software">소프트 포럼</string>
+    <string name="list_bluray">블루레이 포럼</string>
+    <string name="list_smartphone">스마트폰</string>
+    <string name="list_scrap">스크랩창고</string>
+    <string name="list_document">글창고</string>
+    <string name="list_comment">댓글창고</string>
+    <string name="list_memo">쪽지함</string>
+    <string name="list_setting">설정</string>
+    <string name="login">로그인</string>
+    <string name="logout">로그아웃</string>
+    <string name="setting">설정</string>
+    <string name="unknown">알수없음</string>
+
+    <!-- errors -->
+    <string name="bad_request_error_message">잘못된 요청 입니다.\n(Bad Request)</string>
+    <string name="not_found_error_message">페이지를 찾을 수 없습니다.\n(Not Found)</string>
+    <string name="request_timeout_error_message">요청 대기 시간을 초과하였습니다.\n(Request Timeout)</string>
+    <string name="internal_server_error_message">서버에 장애가 발생했습니다.\n(Internal Server Error)</string>
+    <string name="service_unavailable_error_message">서비스를 이용할 수 없습니다.\n(Service Unavailable)</string>
+    <string name="unknown_error_message">에러가 발생했습니다.\n(Unknown Error)</string>
+    <string name="out_of_memory_error_message">메모리가 부족하여 정상적으로 실행 할 수 없습니다.</string>
+
+    <string name="network_problem">네트워크가 연결되지 않았거나 상태가 좋지 않습니다. 네트워크 상태를 확인하신 후 다시 시도해 주세요.</string>
+    <string name="retry_network_problem">현재 네트워크 연결 상태가\n좋지 않아 실패했습니다.\n다시 시도하시겠습니까?\n\n(네트워크 상태를 확인해주세요.)</string>
+    <string name="server_problem">죄송합니다. 서버에 연결할 수 없습니다. 잠시 후 다시 시도해주세요.</string>
+    <string name="not_exist_article_id">정상적인 게시물 정보가 아닙니다.</string>
+    
+	<!-- Network Connection error Dialog -->
+	<string name="dialogbox_title_error">오류가 발생했습니다</string>
+	<string name="service_temp_error">일시적으로 서비스를 이용할 수 없습니다</string>
+	<string name="permission_error">허가가 거부되었습니다</string>
+	<string name="call_limit_error">Call Limit Exceeded</string>
+	<string name="unverified_error">입증되지 않은 계정</string>
+	<string name="contents_error">내용이 너무 깁니다</string>
+	<string name="request_timeout_error">요청 대기시간을 초과하였습니다.</string>
+
+
+	<!-- Dialog -->
+	<string name="dialog_title_error">오류</string>
+	<string name="dialog_title_warning">주의</string>
+	<string name="dialog_title_network_error">네트워크 에러</string>
+    <string name="delete_warning_sns">메시지를 삭제할 수 없습니다</string>
+    <string name="deleted_warning">메시지가 삭제되었습니다</string>
+	<string name="delete_warning">선택된 기록이 삭제됩니다. 계속할까요?</string>
+	<string name="delete_show_never_again">다시 표시하지 않기</string>
+	<string name="network_unavailable">네트워크에 연결할 수 없습니다</string>
+	<string name="not_response">데이터를 불러오는 작업에 실패하였습니다. 잠시후 다시 시도해주시기 바랍니다.</string>
+	<string name="show_close_title">종료 확인</string>
+	<string name="show_delete_title">삭제 확인</string>
+	<string name="show_warning_close">정말로 종료하시겠습니까?</string>
+	<string name="show_preference_information">설정의 "종료시 DB정보 초기화"를 활성화하시면 종료시 초기화를 실행합니다.</string>
+	<string name="show_never_again">다시 표시하지 않기</string>
+	<string name="dialog_recommend_alert_message">추천은 로그인이 필요한 기능입니다.\n설정에서 로그인 정보를 입력해주세요.</string>
+	<string name="dialog_my_dp_save_alert_message">MY디피에 저장은 로그인이 필요한 기능입니다.\n설정에서 로그인 정보를 입력해주세요.</string>
+	<string name="dialog_comment_alert_message">로그인이 필요한 기능입니다.\n설정에서 로그인 정보를 입력해주세요.</string>
+	<string name="dialog_login_check_message">로그인이 필요한 요청입니다. 등록된 계정 정보로 로그인 후 실행할까요? </string>
+	<string name="dialog_require_account_message">계정 정보가 없습니다.\n지금 입력하시겠습니까?</string>
+	<string name="dialog_empty_account_message">계정 정보가 없습니다.\n계정 정보를 먼저 입력해주세요.</string>
+	<string name="dialog_write_not_auth_message">글쓰기는 계정 정보가 필요합니다.\n설정에서 계정정보를 입력하신 후 이용해 주세요.</string>
+	<string name="dialog_content_delete_message">정말 삭제하시겠습니까?</string>
+	<string name="dialog_filter_list_title">필터 닉네임 목록</string>
+	<string name="dialog_filter_item_title">필터 적용 항목</string>
+
+	<!-- BBS -->
+	<string name="bbs_progressbar_login">로그인 중...</string>
+	<string name="bbs_progressbar_checking">권한 요청 중...</string>
+	<string name="bbs_progressbar_loading">로드 중...</string>
+	<string name="bbs_progressbar_updating">업데이트 중...</string>
+	<string name="bbs_progressbar_deleting">삭제요청 중...</string>
+	<string name="bbs_progressbar_recommending">추천요청 중...</string>
+	<string name="bbs_progressbar_trans">변환요청 중...</string>
+	<string name="bbs_progressbar_more">더보기...</string>
+	<string name="bbs_progressbar_save">저장 중...</string>
+	<string name="bbs_progressbar_end">- 끝 -</string>
+
+	<string name="bbs_dialogbox_title_error">에러</string>
+	<string name="bbs_dialogbox_contents_comment_fail">댓글 등록 실패</string>
+
+	<string name="bbs_toast_recommend_success">추천하였습니다.</string>
+	<string name="bbs_toast_recommend_already">이미 추천하였습니다.</string>
+	<string name="bbs_toast_recommend_fail">추천 요청을 실패하였습니다.</string>
+	<string name="bbs_toast_fail_message">요청하신 작업을 실패하였습니다.</string>
+
+	<!-- TITLE -->
+	<string name="article_write">글 쓰기</string>
+	<string name="article_modify">글 수정</string>
+
+	<!-- ARTICLE -->
+	<string name="notice_no">[공지]</string>
+	<string name="article_list_update_fail">목록 가져오기를 실패했습니다.</string>
+	<string name="article_save_my_dp_success">MY 디피에 저장되었습니다.</string>
+	<string name="article_save_my_dp_failed">MY 디피에 저장이 실패하였습니다.</string>
+	
+	<string name="article_context_save_image">이미지 저장</string>
+	<string name="article_context_set_wallpaper">배경으로 설정</string>
+	
+	<string name="article_context_send_memo">쪽지 쓰기</string>
+	<string name="article_context_search_by_nick">닉네임으로 검색</string>
+	<string name="article_context_search_by_id">아이디로 검색</string>
+	<string name="article_context_add_filter">필터에 추가</string>
+	<string name="article_context_del_filter">필터에서 제거</string>
+	<string name="article_context_delete">삭제 하기</string>
+
+	<string name="comment_detail_add_comment">덧플 쓰기</string>
+	<string name="comment_detail_do_recommend">추천 하기</string>
+	<string name="comment_detail_do_memo">쪽지 쓰기</string>
+	<string name="comment_detail_do_delete">삭제 하기</string>
+	
+	<string name="filtered_comment_message">필터링된 댓글 입니다.</string>
+
+	<!-- Content detail layout -->
+	<string name="zoom_in">본문 확대</string>
+	<string name="zoom_out">본문 축소</string>
+	<string name="content_tag">태그:%s</string>
+
+    <!-- messages -->
+    <string name="msg_clipboard_copy_success">클립보드에 복사되었습니다.</string>
+    <string name="msg_drop_out_user_content">탈퇴한 사용자의 글입니다.</string>
+    <string name="msg_filtering_added">필터에 추가되었습니다.</string>
+    <string name="msg_filtering_removed">필터에서 제거되었습니다.</string>
+	<string name="msg_download_manager_complete">다운로드가 완료되었습니다.</string>
+
+	<!-- No item -->
+	<string name="no_bbs">게시판 목록이 없습니다.</string>
+   	<string name="bbs_no_data">조회 결과가 없습니다</string>
+   	<string name="comment_no_data">댓글이 없습니다</string>
+   	<string name="comment_no_data2">덧글이 없습니다</string>
+
+	<!-- Context Menu -->
+	<string name="freetalk_header_title">140자 게시판 옵션</string>
+	<string name="comment_header_title">댓글 옵션</string>
+	<string name="really_delete">정말로 삭제하시겠습니까?</string>
+	
+	<!-- Option Menu -->
+	<string name="menu_create">추가</string>
+	<string name="menu_delete">삭제</string>
+	<string name="menu_recommend">추천</string>
+	<string name="menu_save">저장</string>
+	<string name="menu_done">완료</string>
+	<string name="menu_refresh">새로고침</string>
+	<string name="menu_write">글쓰기</string>
+	<string name="menu_search">검색</string>
+	<string name="menu_write_memo">쪽지쓰기</string>
+	<string name="menu_view_memo">쪽지함</string>
+	<string name="menu_setting">설정</string>
+
+	<!-- Button -->
+    <string name="button_ok">확인</string>
+    <string name="button_yes">네</string>
+    <string name="button_no">아니오</string>
+    <string name="button_cancel">취소</string>
+    <string name="button_close">닫기</string>
+ 	<string name="button_create">추가</string>
+ 	<string name="button_save">저장</string>
+ 	<string name="button_submit">전송</string>
+ 	<string name="button_search">찾기</string>
+ 	<string name="button_delete">삭제</string>
+ 	<string name="button_prev">이전</string>
+ 	<string name="button_copy">URL 복사</string>
+ 	<string name="button_recommend">추천</string>
+ 	<string name="button_modify">수정</string>
+ 	<string name="button_memo">쪽지 보내기</string>
+ 	<string name="button_my_dp">MY 디피에 저장</string>
+ 	<string name="button_share_fb">페이스북 공유</string>
+ 	<string name="button_share_twitter">트위터 공유</string>
+ 	<string name="button_go_comment">댓글목록</string>
+ 	<string name="button_go_bottom">젤 밑으로</string>
+ 	<string name="button_view_by_boxweb">박스웹 보기</string>
+ 	<string name="button_view_by_original">원문 보기</string>
+	<string name="button_add_comment">댓글쓰기</string>
+	<string name="button_close_comment">닫기</string>
+
+	<!-- Preference -->
+    <string name="header_settings">설정</string>
+    <string name="header_account_settings">계정 정보 설정</string>
+    <string name="header_general_settings">일반 정보 설정</string>
+    <string name="header_filter_settings">필터 설정</string>
+    <string name="header_advance_settings">고급 설정</string>
+    <string name="login_is_failing">"로그인에 실패했습니다. 로그인 정보를 다시 확인해주세요."</string>
+    <string name="login_is_success">"로그인에 성공했습니다."</string>
+    <string name="account_id">아이디</string>
+    <string name="account_pw">비밀번호</string>
+    <string name="account_id_empty">아이디를 입력하세요</string>
+    <string name="account_password_empty">비밀번호를 입력하세요</string>
+    <string name="account_autologin">자동로그인 설정</string>
+    <string name="account_autologin_summary">인증된 계정 정보로 자동 로그인 합니다.</string>
+    <string name="account_set">계정 정보 등록</string>
+    <string name="account_set_on_summary">인증됨</string>
+    <string name="account_set_off_summary">인증안됨</string>
+    <string name="account_reset">계정 정보 삭제</string>
+    <string name="account_reset_summary">디피앱의 계정 정보를 삭제 합니다.</string>
+    <string name="account_reset_hint">계정 정보를 삭제하시겠습니까?</string>
+    <string name="information_category">About</string>
+    <string name="about_setting_title">디피앱 정보 v%s</string>
+	<string name="username">사용자 이름이나 이메일</string>
+	<string name="id">아이디</string>	
+	<string name="password">비밀번호</string>
+	<string name="show_password">비밀번호 보기</string>
+	<string name="signup">회원가입</string>
+	<string name="next">다음</string>
+	<string name="okay_action">확인</string>
+	<string name="login_failed_message">로그인하지 못했습니다. 잠시 후 다시 시도하세요</string>
+	<string name="noaccount">계정을 등록할까요?</string>
+	<string name="login_failed">로그인하지 못했습니다</string>
+	<string name="login_success">로그인에 성공했습니다</string>
+	<string name="wrong_id">아이디가 바르지 않습니다</string>
+	<string name="wrong_password">비밀번호가 바르지 않습니다</string>
+	<string name="wrong_id_or_pwd">아이디나 비밀번호가 바르지 않습니다</string>
+	<string name="need_login">로그인이 되어 있지 않습니다. 로그인 후 다시 시도하세요.</string>
+	<string name="title_theme_preference">테마</string>
+	<string name="summary_theme_preference">테마를 선택해주세요.</string>
+	<string name="dialog_title_theme_preference">테마 선택</string>
+	<string name="title_fontsize_preference">폰트 크기</string>
+	<string name="summary_fontsize_preference">본문의 폰트 크기를 선택해주세요.</string>
+	<string name="dialog_title_fontsize_preference">폰트 크기</string>
+	<string name="title_filesize_preference">첨부 파일 크기</string>
+	<string name="summary_filesize_preference">첨부사진의 길이를 선택된 길이로 조정해서 업데이트합니다.</string>
+	<string name="dialog_title_filesize_preference">사진 길이</string>
+	<string name="filter_user_list_title">등록된 필터 목록</string>
+	<string name="filter_user_list_summary">글이나 댓글 목록에서 등록한 사용자 목록입니다.</string>
+	<string name="filter_user_list_nothing_summary">필터에 등록한 사용자가 없습니다.</string>
+	<string name="filter_item_list_title">필터 적용 항목</string>
+	<string name="filter_item_list_summary">필터를 적용할 게시물 목록이나 댓글 목록을 선택합니다.</string>
+    <string name="direct_bbs">게시판 목록 바로 실행</string>
+    <string name="direct_bbs_summary">프로그램 실행 시 게시판 목록으로 이동합니다.</string>
+    <string name="alert_memo">자동 쪽지 알림</string>
+    <string name="alert_memo_summary">새로운 쪽지가 있을 경우 알려줍니다.</string>
+    <string name="save_comment">덧플 작성글 저장</string>
+    <string name="save_comment_summary">덧플 작성후 저장시 자동으로 글을 클립보드에 저장합니다.</string>
+    <string name="navi_widget">게시물 위젯 사용</string>
+    <string name="navi_widget_summary">게시물 목록 오른쪽 상단의 도움 위젯의 사용여부 입니다.</string>
+    <string name="text_only">텍스트만 보기 사용</string>
+    <string name="text_only_summary">게시물 본문,댓글에서 이미지와 플래시 등을 제외한 텍스트만 보도록 설정합니다.</string>
+    <string name="webview_plugin">플래시 사용</string>
+    <string name="webview_plugin_summary">플래시 사용을 허용합니다. 프로그램이 강제 종료될 수도 있습니다.</string>
+    <string name="close_dialog">종료 확인 보기</string>
+    <string name="close_dialog_summary">종료를 확인하는 다이얼로그를 사용여부를 설정 합니다.</string>
+
+	<!-- Write -->
+    <string name="attach_photo">사진 첨부</string>
+    <string name="attach_take_photo">사진 찍기</string>
+    <string name="attach_photo_album">사진 앨범</string>
+    <string name="image_not_ready_sdcard">SD카드가 준비되지 않았습니다.</string>
+    <string name="do_not_access_photo_data">사진 데이터를 가져올수 없습니다.</string>
+    <string name="update_success">등록되었습니다.</string>
+    <string name="update_fail">실패하였습니다. 잠시 후 다시 시도해 주세요.</string>
+    <string name="enter_text">내용을 입력하세요</string>
+    <string name="enter_title">제목을 입력하세요</string>
+    <string name="enter_tag">태그를 입력하세요</string>
+    <string name="enter_tag_text">DPⓐ</string>
+    <string name="enter_comment_here">여기에 댓글을 입력하세요</string>
+    <string name="lose_message_alert">입력한 문자가 모두 삭제됩니다. 계속할까요?</string>
+    <string name="input_max_length_alert">입력 가능한 최대 글자수를 초과하였습니다</string>
+
+    <string name="tap_to_create_memo">새글을 작성하려면 누르세요</string>
+	<string name="add_photo">사진을 추가하려면 누르세요</string>
+	<string name="add_photo_result"><![CDATA[<IMG SRC=\"%s\">]]></string>
+	<string name="msg_please_wait">잠시만 기다리세요</string>
+	<string name="msg_loading_photo">로딩 중...</string>
+	<string name="msg_saving_diary">저장 중...</string>
+	<string name="msg_login_error">로그인하지 못했습니다</string>
+	<string name="msg_upload_photo">업로드 중...</string>
+	<string name="msg_upload_complete">업로드가 완료되었습니다</string>
+	<string name="msg_upload_fail">업로드를 실패했습니다.</string>
+    <string name="msg_fail_to_read_image_file">이미지 파일을 인식할 수 없습니다</string>
+	<string name="exceed_max_subject_length">제목은 100 자 이내입니다.</string>
+	<string name="exceed_max_attach_image">한번에 첨부 할수 있는 파일 수는 20개 까지 입니다.</string>
+    
+
+    <!-- Free Talk -->
+    <string name="write_message">140자 게시판 글쓰기</string>
+	<string name="seperator_today">오늘</string>
+	<string name="seperator_yesterday">어제</string>
+    <string name="enter_url_here">여기에 URL을 입력하세요</string>
+    <string name="deleted">삭제되었습니다</string>
+    <string name="empty"></string>
+    <string name="not_correct_url">올바른 URL형식이 아닙니다</string>
+    <string name="send">전송</string>
+    <string name="exceed_max_length">메시지가 너무 깁니다. 입력할 수 있는 최대 글자 수는 %d자입니다</string>
+    
+    <!-- Search -->
+    <string name="default_bbs">프라임 차한잔</string>
+    <string name="search_hint">검색어를 입력해 주세요.</string>
+    <string name="search_category_title">검색 항목을 선택하세요.</string>
+    <string name="search_category_default">제목</string>
+    <string name="search_keyword_too_short_message">검색어는 2글자 이상 입력해 주세요.</string>
+    <string name="search_keyword_include_string_message">페이지는 숫자만 입력해 주세요.</string>
+    
+    <!-- 쪽지 -->
+    <string name="memo_tab_title_received">받은 편지함</string>
+    <string name="memo_tab_title_send">보낸 편지함</string>
+    <string name="memo_tab_title_storage">보관 편지함</string>
+    <string name="memo_not_exist">쪽지가 없습니다.</string>
+    <string name="memo_context_menu_storage">보관</string>
+    <string name="memo_context_menu_reply">답장</string>
+    <string name="memo_context_menu_delete">삭제</string>
+    <string name="memo_fail_storage_message">쪽지 저장에 실패하였습니다.</string>
+    <string name="memo_success_storage_message">보관 편지함에 저장되었습니다.</string>
+    <string name="memo_fail_delete_message">쪽지 삭제에 실패하였습니다.</string>
+    <string name="memo_success_delete_message">쪽지가 삭제되었습니다.</string>
+    <string name="memo_enter_receiver">받는 사람 아이디를 입력하세요</string>
+    <string name="memo_write_title">쪽지 쓰기</string>
+    <string name="memo_exceed_max_content_length">쪽지 내용은 500자 이내입니다.</string>
+    <string name="memo_content_contain_special_char">특수문자(|, #)는 사용할 수 없습니다.</string>
+    <string name="memo_send_box_check_message">보낸 쪽지함에 보관</string>
+	<string name="memo_send_success_message">쪽지가 전달되었습니다.</string>
+    <string name="memo_send_fail_message">전송실패하였습니다. 잠시 후 다시 시도해 주세요.</string>
+    <string name="memo_alert_new_message">새로운 쪽지가 %d개 있습니다.</string>
+</resources>

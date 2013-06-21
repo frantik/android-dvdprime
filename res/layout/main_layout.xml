@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main">
+    
+    <ImageView
+    	android:id="@+id/main_dp_logo_imageView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_centerHorizontal="true"
+    	android:layout_marginTop="56.66dp"
+    	android:src="@drawable/ic_main_logo" />
+    	
+    <LinearLayout 
+    	android:orientation="horizontal"
+    	android:id="@+id/main_scrap_button_layout"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+		android:layout_above="@+id/main_button_layout"
+		android:layout_marginLeft="13.33dp"
+		android:layout_marginRight="13.33dp"
+   		android:paddingBottom="6.66dp">
+		
+   		<Button
+   			android:id="@+id/main_button_scrap_Button"
+   			android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:layout_weight="1"
+   			android:text="@string/list_scrap" />
+    	
+   		<Button
+   			android:id="@+id/main_button_document_Button"
+   			android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:layout_weight="1"
+   			android:text="@string/list_document" />
+    	
+   		<Button
+   			android:id="@+id/main_button_comment_Button"
+   			android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:layout_weight="1"
+   			android:text="@string/list_comment" />
+    	
+    </LinearLayout>
+    	
+    <LinearLayout
+    	android:orientation="horizontal"
+    	android:id="@+id/main_button_layout"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentBottom="true"
+		android:layout_marginLeft="13.33dp"
+		android:layout_marginRight="13.33dp"
+   		android:paddingBottom="13.33dp">
+   		
+    	<Button
+    		android:id="@+id/main_button_memo_imageView"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:text="@string/list_memo" />
+
+    	<Button
+    		android:id="@+id/main_button_setting_imageView"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:text="@string/list_setting" />
+    </LinearLayout>
+    	
+</RelativeLayout>

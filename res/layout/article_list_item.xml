@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2007, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License"); 
+** you may not use this file except in compliance with the License. 
+** You may obtain a copy of the License at 
+**
+**     http://www.apache.org/licenses/LICENSE-2.0 
+**
+** Unless required by applicable law or agreed to in writing, software 
+** distributed under the License is distributed on an "AS IS" BASIS, 
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+** See the License for the specific language governing permissions and 
+** limitations under the License.
+*/
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="6.66dp">
+
+    <TextView android:id="@+id/article_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/article_list_count"
+        android:layout_alignParentLeft="true"
+        android:paddingRight="3.33dp"
+        android:singleLine="false" 
+        android:gravity="left"
+        android:text="@string/empty"
+        android:textAppearance="@style/CommonTextAppearanceListContentsWhite" />
+
+    <TextView android:id="@+id/article_list_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/article_list_title"
+        android:singleLine="true"
+        android:textAppearance="@style/GrayBaseSmallText" />
+
+    <TextView android:id="@+id/article_list_no" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/article_list_title"
+        android:layout_alignParentLeft="true"
+        android:ellipsize="end" 
+        android:singleLine="true"
+        android:textAppearance="@style/GrayBaseSmallText" />
+
+    <TextView android:id="@+id/article_list_user_name" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/article_list_title"
+        android:layout_toRightOf="@+id/article_list_no"
+        android:layout_alignBaseline="@+id/article_list_no"
+        android:paddingLeft="3.33dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textAppearance="@style/GrayBaseSmallText" />
+
+    <TextView android:id="@+id/article_list_write_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/article_list_count"        
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/article_list_no"
+        android:singleLine="true" 
+        android:textAppearance="@style/GrayBaseSmallText" />
+	
+</RelativeLayout>

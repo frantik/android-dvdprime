@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	
+	<ListView 
+		android:id="@+id/memo_list_listView"
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		android:cacheColorHint="#00000000" />
+
+	<LinearLayout 
+		android:id="@+id/empty"
+		android:orientation="vertical" 
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" 
+		android:layout_gravity="center_horizontal"
+		android:gravity="center_vertical">
+		<ImageView 
+			android:id="@+id/memo_list_imageView"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_gravity="center" 
+			android:src="@drawable/noitems_text_based" />
+		<TextView 
+			android:id="@+id/memo_list_textView"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_marginTop="13.33dp"
+			android:layout_gravity="center"
+			android:text="@string/memo_not_exist"
+			android:textSize="22dip" 
+			android:textColor="@color/dp_color005" />
+
+	</LinearLayout>
+
+</RelativeLayout>

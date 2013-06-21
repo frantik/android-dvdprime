@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<!-- 탭 버튼 -->
+	<TabWidget 
+		android:id="@+id/dptabbar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"> 
+		
+		<TextView
+			android:id="@+id/communitytab"
+	        android:layout_width="0dip"
+	        android:layout_height="64dip"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="-3dip"
+	        android:layout_marginRight="-3dip"
+	        android:paddingTop="7dip"
+	        android:paddingBottom="2dip"
+	        android:singleLine="true" 
+	        android:gravity="center"
+	        android:focusable="true"
+	        android:ellipsize="marquee"
+	        android:drawableTop="@drawable/ic_tab_community"
+	        android:text="@string/list_community"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:textColor="@color/tab_indicator_text"
+	        android:background="@drawable/buttonbarbackground" />
+		
+		<TextView
+			android:id="@+id/hardwaretab"
+	        android:layout_width="0dip"
+	        android:layout_height="64dip"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="-3dip"
+	        android:layout_marginRight="-3dip"
+	        android:paddingTop="7dip"
+	        android:paddingBottom="2dip"
+	        android:singleLine="true" 
+	        android:gravity="center"
+	        android:focusable="true"
+	        android:ellipsize="marquee"
+	        android:drawableTop="@drawable/ic_tab_hardware"
+	        android:text="@string/list_hardware"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:textColor="@color/tab_indicator_text"
+	        android:background="@drawable/buttonbarbackground" />
+		
+		<TextView
+			android:id="@+id/softwaretab"
+	        android:layout_width="0dip"
+	        android:layout_height="64dip"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="-3dip"
+	        android:layout_marginRight="-3dip"
+	        android:paddingTop="7dip"
+	        android:paddingBottom="2dip"
+	        android:singleLine="true" 
+	        android:gravity="center"
+	        android:focusable="true"
+	        android:ellipsize="marquee"
+	        android:drawableTop="@drawable/ic_tab_software"
+	        android:text="@string/list_software"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:textColor="@color/tab_indicator_text"
+	        android:background="@drawable/buttonbarbackground" />
+		
+		<TextView
+			android:id="@+id/bluraytab"
+	        android:layout_width="0dip"
+	        android:layout_height="64dip"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="-3dip"
+	        android:layout_marginRight="-3dip"
+	        android:paddingTop="7dip"
+	        android:paddingBottom="2dip"
+	        android:singleLine="true" 
+	        android:gravity="center"
+	        android:focusable="true"
+	        android:ellipsize="marquee"
+	        android:drawableTop="@drawable/ic_tab_bluray"
+	        android:text="@string/list_bluray"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:textColor="@color/tab_indicator_text"
+	        android:background="@drawable/buttonbarbackground" />
+		
+		<TextView
+			android:id="@+id/smartphonetab"
+	        android:layout_width="0dip"
+	        android:layout_height="64dip"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="-3dip"
+	        android:layout_marginRight="-3dip"
+	        android:paddingTop="7dip"
+	        android:paddingBottom="2dip"
+	        android:singleLine="true" 
+	        android:gravity="center"
+	        android:focusable="true"
+	        android:ellipsize="marquee"
+	        android:drawableTop="@drawable/ic_tab_smartphone"
+	        android:text="@string/list_smartphone"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:textColor="@color/tab_indicator_text"
+	        android:background="@drawable/buttonbarbackground" />
+	</TabWidget>
+
+	<!-- 게시물 목록 -->
+    <ListView
+        android:id="@+id/article_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/dptabbar"
+		android:cacheColorHint="#00000000"
+        android:drawSelectorOnTop="false" /> 
+
+	<LinearLayout 
+		android:id="@+id/empty"
+		android:orientation="vertical" 
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" 
+		android:layout_gravity="center_horizontal"
+		android:gravity="center_vertical">
+		<ImageView 
+			android:id="@+id/bbs_list_imageView"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_gravity="center" 
+			android:src="@drawable/noitems_text_based" />
+		<TextView 
+			android:id="@+id/bbs_list_textView"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_marginTop="13.33dp"
+			android:layout_gravity="center"
+			android:text="@string/bbs_no_data"
+			android:textSize="22dip" 
+			android:textColor="@color/dp_color005" />
+
+	</LinearLayout>
+
+	<!-- 네비게이션  -->
+	<RelativeLayout
+		android:id="@+id/article_list_quick_navi_layout"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="6.66dp"
+		android:layout_marginRight="6.66dp"
+		android:paddingLeft="13.33dp"
+		android:paddingRight="13.33dp"
+		android:gravity="center"
+		android:focusableInTouchMode="true"
+		android:background="@drawable/quick_navi_bg"
+		android:visibility="gone">
+		<ImageView
+			android:id="@+id/article_list_quick_write_imageView"
+			android:layout_width="33.33dp"
+			android:layout_height="33.33dp"
+			android:src="@drawable/ic_navi_write_selector" />
+		<ImageView
+			android:id="@+id/article_list_quick_search_imageView"
+			android:layout_width="33.33dp"
+			android:layout_height="33.33dp"
+			android:layout_toRightOf="@+id/article_list_quick_write_imageView"
+			android:layout_marginLeft="13.33dp"
+			android:src="@drawable/ic_navi_search_selector" />
+		<ImageView
+			android:id="@+id/article_list_quick_refresh_imageView"
+			android:layout_width="33.33dp"
+			android:layout_height="33.33dp"
+			android:layout_toRightOf="@+id/article_list_quick_search_imageView"
+			android:layout_marginLeft="13.33dp"
+			android:src="@drawable/ic_navi_refresh_selector" />
+	</RelativeLayout>
+	
+	<!-- 검색 레이아웃 -->
+	<LinearLayout 
+		android:id="@+id/article_list_search_layout" 
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content" 
+		android:layout_alignParentTop="true"
+		android:paddingTop="6.66dip" 
+		android:paddingBottom="3.33dip" 
+		android:gravity="center_vertical"
+		android:background="@drawable/msg_search_bg"
+		android:visibility="gone">
+		
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"
+			android:addStatesFromChildren="true">
+				
+			<Button
+				android:id="@+id/article_list_category_button"
+				android:layout_width="wrap_content"
+				android:layout_height="31.33dp"
+				android:layout_marginLeft="3.33dip"
+				android:paddingLeft="6.66dp"
+				android:paddingRight="6.66dp"
+				android:text="@string/search_category_default"
+				android:textSize="15sp" 
+				android:textColor="@drawable/text_color_black" 
+				android:background="@drawable/btn_search_category_selector" />
+			<!-- Edit Begin -->
+			<EditText
+				android:id="@+id/article_list_keyword_editText" 
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" 
+				android:layout_marginLeft="3.33dip"
+				android:layout_toRightOf="@+id/article_list_category_button"
+				android:ellipsize="end" 
+				android:scrollbars="vertical" 
+				android:hint="@string/search_hint" 
+				android:text="@string/empty" 
+				android:textSize="15sp" 
+				android:textColor="@drawable/text_color_black" 
+				android:textColorHint="@color/msg_quickedit_text_color" 
+				android:imeOptions="actionSearch" 
+				android:inputType="textEmailAddress|textWebEditText"
+				android:background="@drawable/msg_search_input" />
+		</RelativeLayout>			
+
+		<Button 
+			android:id="@+id/article_list_search_btn" 
+			android:layout_width="wrap_content" 
+			android:layout_height="31.33dip" 
+			android:layout_marginTop="0dip" 
+			android:layout_marginRight="6.67dip" 
+			android:layout_marginLeft="6.67dip"
+			android:minWidth="64dip"
+			android:shadowDx="-1" 
+		 	android:shadowDy="-1" 
+			android:shadowRadius="0.3" 
+			android:shadowColor="#80000000"
+			android:text="@string/button_search" 
+			android:textStyle="bold"
+			android:typeface="sans" 
+			android:textSize="14sp"
+			android:textColor="@drawable/btn_text_send_selector" 
+			android:background="@drawable/btn_send_selector" />
+	</LinearLayout>
+
+</RelativeLayout>

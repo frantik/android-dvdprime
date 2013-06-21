@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2007, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License"); 
+** you may not use this file except in compliance with the License. 
+** You may obtain a copy of the License at 
+**
+**     http://www.apache.org/licenses/LICENSE-2.0 
+**
+** Unless required by applicable law or agreed to in writing, software 
+** distributed under the License is distributed on an "AS IS" BASIS, 
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+** See the License for the specific language governing permissions and 
+** limitations under the License.
+*/
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/memo_list_footer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="128dip"
+    android:gravity="center">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_centerInParent="true"
+		android:layout_marginTop="13.33dp"
+		android:paddingLeft="13.33dp"
+		android:paddingRight="13.33dp"
+		android:gravity="center">
+
+		<TextView
+			android:id="@+id/memo_list_footer_prev_textView"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="2"
+			android:text="이전목록"
+			android:textAppearance="@style/CommonTextAppearanceTitleWhite" />
+		
+		<TextView
+			android:id="@+id/memo_list_footer_1st_textView"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_toRightOf="@+id/memo_list_footer_prev_textView"
+			android:gravity="center"
+			android:text="1"
+			android:textAppearance="@style/CommonTextAppearanceTitleWhite" />
+		
+		<TextView
+			android:id="@+id/memo_list_footer_2nd_textView"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_toRightOf="@+id/memo_list_footer_1st_textView"
+			android:gravity="center"
+			android:text="2"
+			android:textAppearance="@style/CommonTextAppearanceTitleWhite" />
+		
+		<TextView
+			android:id="@+id/memo_list_footer_3rd_textView"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_toRightOf="@+id/memo_list_footer_2nd_textView"
+			android:gravity="center"
+			android:text="3"
+			android:textAppearance="@style/CommonTextAppearanceTitleWhite" />
+		
+		<TextView
+			android:id="@+id/memo_list_footer_next_textView"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="2"
+			android:layout_toRightOf="@+id/memo_list_footer_3rd_textView"
+			android:gravity="right"
+			android:text="다음목록"
+			android:textAppearance="@style/CommonTextAppearanceTitleWhite" />
+		
+	</LinearLayout>
+
+</RelativeLayout>

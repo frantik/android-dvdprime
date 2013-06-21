@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.dvdprime.android.app"
+    android:title="@string/header_settings"
+    android:key="parent">
+
+    <PreferenceCategory
+            android:title="@string/header_general_settings" />
+
+	<ListPreference
+	        android:key="dp_theme"
+	        android:defaultValue="Black"
+	        android:title="@string/title_theme_preference"
+	        android:summary="@string/summary_theme_preference"
+	        android:entries="@array/entries_theme_preference"
+	        android:entryValues="@array/entryvalues_theme_preference"
+	        android:dialogTitle="@string/dialog_title_theme_preference" />
+        
+	<ListPreference
+	        android:key="content_fontsize"
+	        android:defaultValue="26"
+	        android:title="@string/title_fontsize_preference"
+	        android:summary="@string/summary_fontsize_preference"
+	        android:entries="@array/entries_fontsize_preference"
+	        android:entryValues="@array/entries_fontsize_preference"
+	        android:dialogTitle="@string/dialog_title_fontsize_preference" />
+
+	<ListPreference
+	        android:key="file_widthsize"
+	        android:defaultValue="800"
+	        android:title="@string/title_filesize_preference"
+	        android:summary="@string/summary_filesize_preference"
+	        android:entries="@array/entries_filesize_preference"
+	        android:entryValues="@array/entryvalues_filesize_preference"
+	        android:dialogTitle="@string/dialog_title_filesize_preference" />
+
+</PreferenceScreen>
